@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 """ Extract the data """
-airbnb_data = pd.read_csv("C:\\Users\\ochie\\OneDrive\\Desktop\\Python\\machine_learning_zoomcamp\\HW2\\AB_NYC_2019.csv")
+airbnb_data = pd.read_csv("AB_NYC_2019.csv")
 
 # Replace the spaces with the underscores and make them lowercase
 airbnb_data.columns = airbnb_data.columns.str.lower().str.replace(" ","_")
