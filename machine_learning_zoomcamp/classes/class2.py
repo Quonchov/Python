@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 # %matplotlib inline  # Ensures the plots are displayed in a notebook
 
-dataset = pd.read_csv("C:\\Users\\ochie\\OneDrive\\Desktop\\Python\\machine_learning_zoomcamp\\HW1\\data.csv")
+dataset = pd.read_csv("Python\\machine_learning_zoomcamp\\HW1\\data.csv")
 
 
 """First do a data cleaning process make some values lowercases and remove the spaces"""
