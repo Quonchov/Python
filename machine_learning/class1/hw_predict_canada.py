@@ -15,7 +15,7 @@ from sklearn import linear_model
 
 # Predict Canada's per Capita income in 2020
 
-df = pd.read_csv("C:\\Users\\ochie\\machine_learning\\canada_files.csv")
+df = pd.read_csv("\\machine_learning\\canada_files.csv")
 
 
 """ First: Make a plot for visualization """
