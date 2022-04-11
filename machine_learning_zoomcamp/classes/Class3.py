@@ -44,7 +44,7 @@ df[x].nunique() - returns the number of unique values in x series
 
 
 """ Step 1: Churn Prediction Project"""
-df = pd.read_csv("C:\\Users\\ochie\\OneDrive\\Desktop\\Python\\machine_learning_zoomcamp\\Week 3\\WA_Fn-UseC_-Telco-Customer-Churn.csv")
+df = pd.read_csv("\\Week 3\\WA_Fn-UseC_-Telco-Customer-Churn.csv")
 df.head()
 df.head().T # Looks at all the columns while transposing the dataframe
 
