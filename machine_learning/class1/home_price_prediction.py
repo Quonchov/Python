@@ -14,11 +14,12 @@ from sklearn import linear_model
 
 
 # import home prices in the pandas dataframe
-df = pd.read_csv("C:\\Users\\ochie\\machine_learning\\home_prices.csv")
+df = pd.read_csv("C:\\Users\\ochie\\codes\\Python\\machine_learning\\class1\\home_prices.csv")
+print(df.head(3))   # Visulaize the first three items on the data
 # print(df)
 
 # Make a plot to visualize the data
-# %matplotlib inline
+# %matplotlib inline  ===> for ipnyb files or jupyter notes
 # plt.xlabel("area(sqr ft)")
 # plt.ylabel("price(USD)")
 # plt.scatter(df.area, df.price, color="red", marker="+")
@@ -26,11 +27,11 @@ df = pd.read_csv("C:\\Users\\ochie\\machine_learning\\home_prices.csv")
 """ From the plot a linear regression will be better """
 
 # Using linear regression from sklearn
-reg = linear_model.LinearRegression()   # create an instance
+reg = linear_model.LinearRegression()   # create an instance for the linear regression
 reg.fit(df[["area"]], df.price)     # fit the data
 
 # The regression is ready to predic the information
-prediction = reg.predict([[3300]])
+prediction = reg.predict([[3300]])      # Shows the prediction for house with an area of 3300
 # print(prediction)
 
 # Let's see the prediction using plots
@@ -41,7 +42,7 @@ plt.plot(df.area, reg.predict(df[["area"]]), color="blue")
 
 
 # Now let's predict the price of houses using the areas provided
-df_new = pd.read_csv("C:\\Users\\ochie\\machine_learning\\area.csv")
+df_new = pd.read_csv("C:\\Users\\ochie\\codes\\Python\\machine_learning\\class1\\area.csv")    # Set of new data provided for prediction
 # print(df_new)
 
 # Predict the prices using linear regression
@@ -57,4 +58,4 @@ plt.ylabel("price", fontsize=20)
 plt.scatter(df_new.area, df_new.price_new, color="red", marker="+")
 plt.plot(df_new.area, reg.predict(df_new[["area"]]), color="blue")
 
-df_new.to_csv("C:\\Users\\ochie\\machine_learning\\prediction.csv", index=False)  # exports the values predicted
+df_new.to_csv("C:\\Users\\ochie\\codes\\Python\\machine_learning\\class1\\prediction.csv", index=False)  # exports the values predicted

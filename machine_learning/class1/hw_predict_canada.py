@@ -15,7 +15,11 @@ from sklearn import linear_model
 
 # Predict Canada's per Capita income in 2020
 
+<<<<<<< HEAD
+df = pd.read_csv("C:\\Users\\ochie\\codes\\Python\\machine_learning\\class1\\canada_files.csv")
+=======
 df = pd.read_csv("\\machine_learning\\canada_files.csv")
+>>>>>>> 26e39243a407e22732b3a64d279e37eeec95fcb0
 
 
 """ First: Make a plot for visualization """
@@ -40,3 +44,9 @@ plt.xlabel("year", fontsize=20)
 plt.ylabel("income", fontsize=20)
 plt.scatter(df.year, df.income, color="red", marker="+")
 plt.plot(df.year, reg.predict(df[["year"]]), color="blue")
+<<<<<<< HEAD
+
+""" Answer """
+# [41288.69409442]
+=======
+>>>>>>> 26e39243a407e22732b3a64d279e37eeec95fcb0
