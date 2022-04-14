@@ -14,7 +14,7 @@ from sklearn import linear_model
 
 
 # import home prices in the pandas dataframe
-df = pd.read_csv("C:\\Users\\ochie\\codes\\Python\\machine_learning\\class1\\home_prices.csv")
+df = pd.read_csv("home_prices.csv")
 print(df.head(3))   # Visulaize the first three items on the data
 # print(df)
 
@@ -42,7 +42,7 @@ plt.plot(df.area, reg.predict(df[["area"]]), color="blue")
 
 
 # Now let's predict the price of houses using the areas provided
-df_new = pd.read_csv("C:\\Users\\ochie\\codes\\Python\\machine_learning\\class1\\area.csv")    # Set of new data provided for prediction
+df_new = pd.read_csv("area.csv")    # Set of new data provided for prediction
 # print(df_new)
 
 # Predict the prices using linear regression
@@ -58,4 +58,4 @@ plt.ylabel("price", fontsize=20)
 plt.scatter(df_new.area, df_new.price_new, color="red", marker="+")
 plt.plot(df_new.area, reg.predict(df_new[["area"]]), color="blue")
 
-df_new.to_csv("C:\\Users\\ochie\\codes\\Python\\machine_learning\\class1\\prediction.csv", index=False)  # exports the values predicted
+df_new.to_csv("prediction.csv", index=False)  # exports the values predicted
