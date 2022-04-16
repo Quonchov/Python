@@ -29,7 +29,7 @@ median_bedrooms = math.floor(df.bedrooms.median())   # makes the values an integ
 
 
 """ Fill in the the NaN values with the median value """
-df.bedrooms = df.bedrooms.fillna(median_bedrooms)   # fillns the NaN with the median number
+df.bedrooms = df.bedrooms.fillna(median_bedrooms)   # fillna   the NaN with the median number
 # print(df)
 
 # Train the model
