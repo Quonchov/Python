@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 
 # consider math = x and cs = y
-df = pd.read_csv("C:/Users/ochie/codes/Python/machine_learning/class3/test_score.csv")
+df = pd.read_csv("test_score.csv")
 print(df)
 
 """ First: Make plot to visualize the dataset """
@@ -63,7 +63,7 @@ def grad_descent(x,y):
 
 
 # if __name__ == "__main__":
-#     df = pd.read_csv("C:/Users/ochie/codes/Python/machine_learning/class3/test_score.csv")
+#     df = pd.read_csv("test_score.csv")
 #     x = np.array(df.math)
 #     y = np.array(df.cs)
     
