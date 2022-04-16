@@ -10,7 +10,7 @@ from sklearn import linear_model
 import math
 from word2number import w2n
 
-df = pd.read_csv("C:\\Users\\ochie\\codes\\Python\\machine_learning\\class2\\home_prices2.csv")  # Load data into pandas dataframe
+df = pd.read_csv("home_prices2.csv")  # Load data into pandas dataframe
 # print(df.head(3))  
 
 """ Check the data set given to determine which method is best suited for solving the problem 

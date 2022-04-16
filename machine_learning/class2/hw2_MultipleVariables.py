@@ -12,7 +12,7 @@ from sklearn import linear_model
 from word2number import w2n
 import math
 
-df = pd.read_csv("C:\\Users\\ochie\\codes\\Python\\machine_learning\\class2\\hiring.csv")  # Load data into pandas dataframe
+df = pd.read_csv("hiring.csv")  # Load data into pandas dataframe
 # print(df.head(3))
 
 # Remove the NaN
